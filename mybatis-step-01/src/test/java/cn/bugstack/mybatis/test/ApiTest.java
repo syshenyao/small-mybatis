@@ -33,6 +33,8 @@ public class ApiTest {
 
         String res = userDao.queryUserName("10001");
         logger.info("测试结果：{}", res);
+        Integer age = userDao.queryUserAge("10001");
+        logger.info("测试结果：{}", age);
     }
 
 }
