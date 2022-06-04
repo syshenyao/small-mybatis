@@ -30,7 +30,7 @@ public class TestMetaObject {
         System.out.println("getGetterNames：" + JSON.toJSONString(metaObject.getGetterNames()));
         System.out.println("getSetterNames：" + JSON.toJSONString(metaObject.getSetterNames()));
         System.out.println("name的get方法返回值：" + JSON.toJSONString(metaObject.getGetterType("name")));
-        System.out.println("stus的set方法参数值：" + JSON.toJSONString(metaObject.getGetterType("stus")));
+        System.out.println("stus的set方法参数值：" + JSON.toJSONString(metaObject.getSetterType("stus")));
         System.out.println("name的hasGetter：" + metaObject.hasGetter("name"));
         // 出现：UnsupportedOperationException异常
         // System.out.println("stus.id(属性为集合)的hasGetter：" + metaObject.hasGetter("stus.id"));
